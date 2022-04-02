@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Register: HackClone</title>
+    
+        <style>
+            body {
+                background: black url("Bg_register.jpeg") no-repeat;
+                background-size: cover;
+                color: white;
+            }
+
+            .nav-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid white;
+                padding: 1rem;
+            }
+
+            .nav-bar a, nav-bar a:visited { 
+                color: white; 
+                text-decoration: none; 
+            }
+
+            form { 
+                max-width: 450px;
+                background: rgba(0, 0, 0, 0.2);
+                margin: 1rem auto;
+                padding: 1rem;
+                border-radius: 10px;
+            }
+
+            fieldset label {
+                text-align: left;
+                margin-top: 1vh;
+                margin-left: 3vw;
+            }
+            
+            
+            input[type="submit"], input[type="reset"], select, fieldset input {
+                margin-bottom: 1vh;
+                width: 95%;
+                margin: 0.3rem auto;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                padding: 0.3rem;
+            }
+
+            select {
+                width: 80%;
+                margin-bottom: 0.7rem;
+            }
+            
+            fieldset input, fieldset label {
+                display: block;
+                cursor: pointer;
+            }
+
+            .rad label { display: inline-block; }
+            fieldset { margin: 0.5rem; }
+        </style>
+
+        <link rel="icon" href="./Logo.png" type="image/png">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="link"><a href="./index.html">Home</a></div>
+            <div class="link"><a href="./event.html">Events</a></div>
+            <div class="link"><a href="./About.html">About Us</a></div>
+            <div class="link"><a href="./register.html">Register</a></div>
+            <div class="link"><a href="./swags.html">Merchandise</a></div>            
+        </div>
+
+        <form action="#">
+            <fieldset>
+                <legend>Your Information</legend>
+
+
+                <label for="name">Your Name: </label>
+                <input type="text" name="name" id="name" placeholder="John Doe"> 
+
+                <label for="uname" maxlength="25">Username: </label>
+                <input type="text" name="uname" id="uname" placeholder="user0042" required> 
+                
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass" reqiored> 
+                
+                <label for="cpass">Confirm Password: </label>
+                <input type="password" name="cpass" id="cpass" required> 
+
+            </fieldset><br>
+            <fieldset>
+                <legend>Event</legend>
+
+                <select name="how" id="how">
+                    <option value="1">HackClone Berlin</option>
+                    <option value="2">HackClone Delhi</option>
+                    <option value="3">HackClone Ahmedabad</option>
+                    <option value="4">HackClone Dubai</option>
+                </select>
+            </fieldset>
+            
+            <br>
+            <input type="checkbox" name="tc" id="tc">
+            <label for="tc">I Agree all terms and conditions</label> 
+            <br>
+
+            <input type="submit" value="Register!"> <br>
+            <input type="reset" value="Clear">
+        </form>
+    </body>
+</html>

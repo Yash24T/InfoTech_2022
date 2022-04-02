@@ -1,0 +1,102 @@
+<HTML>
+    <Head>
+        <Title>HackClone</Title>
+        
+        <style>
+            body
+            {
+                background-color: black;
+                color: white;
+            }
+
+            marquee {
+                border: 1px solid white;
+                /* color: purple; */
+            }
+
+            marquee a:link, marquee a:visited {
+                color: white;
+                text-decoration: none;
+            }
+
+            .spacer {
+                display: inline-block;
+                width: 200px;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'logo header header header'
+                    'logo intro intro intro';
+                padding: 5rem 8rem;
+                gap: 2rem;
+            }
+
+            h1 {
+                font-size: 5rem;
+                margin: 1rem;
+            }
+
+            #logo {
+                width: 250px;
+                border-radius: 500px;
+                grid-area: 'logo';
+                transform: translateY(20%);
+                box-shadow: 2px 2px #eee;
+            }
+
+            .nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background: black url(./Matrix-code-gif.gif) repeat-x;
+                height: 150px;
+            }
+
+            .nav .button {
+                background: black;
+                border-radius: 5px;
+                padding: 1rem;
+                height: 1rem;
+            }
+    
+            .nav .button:hover {
+                border: 1px solid white;
+            }
+           
+            .nav .button:hover a {
+                transform: scale(1.2);
+                transition: 1s;
+            }
+
+            .nav a, .nav a:visited { 
+                color: #eee; 
+                text-decoration: none;
+            }
+        </style>
+
+        <link rel="icon" href="./Logo.png" type="image/png">
+    </Head>
+    <Body>
+        <marquee>
+            <a href="./event.html">New Events</a><span class="spacer"></span>
+            <!-- <a href="./About.html">About Us</a><span class="spacer"></span> -->
+            <a href="./swags.html">New Swags & goodies</a><span class="spacer"></span>
+            <a href="./register.html">Register Here</a><span class="spacer"></span>
+        </marquee>
+
+        <div class="container">
+            <img src="Logo.png" id="logo" alt="Logo">
+            <h1 style = "grid-area: header;"><br>HackClone</h1>
+            <p style = "grid-area: intro; font-size: 1.2rem;">HackClone is community formed in 2020 to make the world cyber safe. Our motive is to provide training to the people all over the world to help them become a cyber security expert that would help the organisations become cyber safe. We arrange different events for the people to build experti in field of Mobile Pennetration Testing, Web Application, IoT Testing and Network Testing. We arrange events events at different places all over the world so that people of different destinations can gain expertise in this field of Hacking.</p>
+        </div>
+
+        <div class="nav">
+            <span class="button"><a href="./event.html">New Events</a></span>
+            <span class="button"><a href="About.html">About Us</a></span>
+            <span class="button"><a href="./register.html">Register</a></span>
+            <span class="button"><a href="./swags.html">Swags and Goodies</a></span>
+        </div>        
+    </Body>
+</HTML>
